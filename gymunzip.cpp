@@ -4,7 +4,7 @@
 #include <string> 
 #include <vector>
 #include "unzip.h"
-#include "src/zip.h"
+#include "zip.h"
 
 namespace {
 

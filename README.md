@@ -18,3 +18,15 @@ unZip("2.zip", path, [](int index, int count) {
 toZip("2.zip", path, [](int index, int count) {
 	std::cout << index << "\t" << count << std::endl;
 });
+
+
+## CMake 编译
+
+项目现已支持 CMake（仅 Windows，依赖 `Windows.h`）：
+
+```bash
+cmake -S . -B build -G "Visual Studio 17 2022"
+cmake --build build --config Release
+```
+
+生成动态库 `gymzip`（导出 `unZip` / `toZip`）。
