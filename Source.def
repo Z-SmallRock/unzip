@@ -6,3 +6,4 @@ LIBRARY  gymzip
 EXPORTS
 
 unZip @1
+toZip @2
